@@ -17,7 +17,7 @@ while True:
       
     mask = cv2.inRange(frame,u_black,l_black)
     res = cv2.bitwise_and(frame, frame, mask = mask)
-  q
+  
     f = frame - res
     f = np.where(f == 0, image, f)
   
